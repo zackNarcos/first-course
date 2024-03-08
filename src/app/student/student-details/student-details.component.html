@@ -1,0 +1,11 @@
+<div *ngIf="student">
+    <h2>Détails de l'étudiant</h2>
+    <p><strong>Prénom:</strong> {{ student?.firstName }}</p>
+    <p><strong>Nom:</strong> {{ student?.lastName }}</p>
+    <p><strong>Âge:</strong> {{ student?.age }}</p>
+    <p><strong>Note:</strong> {{ student?.grade }}</p>
+  </div>
+  <div *ngIf="!student">
+    L'étudiant n'existe pas.
+  </div>
+  
